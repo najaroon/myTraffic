@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         // Controller Button
         controllerButton();
 
+
     }   // Main Method
 
     private void controllerButton() {
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Sound Effect
-                MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.cat);
+                MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.effect_btn_long);
                 mediaPlayer.start();
             } // onClick
         });
