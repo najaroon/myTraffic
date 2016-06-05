@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.najaroon.nong.mytraffic3.MainActivity"
-    android:background="@drawable/bg15">
+    android:background="@drawable/wall24">
 
     <TextView
         android:layout_width="wrap_content"
