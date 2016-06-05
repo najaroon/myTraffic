@@ -1,6 +1,8 @@
 package com.najaroon.nong.mytraffic3;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     //Explicit
     private ListView trafficListView;
     private Button aboutMeButton;
+    private String urlYoutubeString = "https://youtu.be/xuAyqEn-0sc";
 
 
     @Override
@@ -38,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
                 // Sound Effect
                 MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.effect_btn_long);
                 mediaPlayer.start();
+
+                // Web View
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(urlYoutubeString));
+                startActivity(intent);
+
             } // onClick
         });
 
